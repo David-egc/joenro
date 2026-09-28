@@ -1,0 +1,108 @@
+.path-proyectos {
+
+    .region-content {
+        padding-top: 100px;
+
+        .block-page-title-block {
+          display:none;
+        }
+
+        .view-proyectos {
+            padding: 50px 0;
+
+            .view-content {
+                .item-proyecto {
+                    background: $white;
+                    position: relative;
+                    overflow: hidden;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+                    transition: $transition;
+
+                    &:hover {
+                        .imagenes {
+                            .overlay {
+                                opacity: 1;
+                            }
+                        }
+
+                        .item-contenido {
+                            border-color: $red;
+                        }
+                    }
+
+                    .imagenes {
+                        position: relative;
+
+                        img {
+                            height: 300px;
+                            object-fit: cover;
+                        }
+
+                        .overlay {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(230, 0, 0, 0.9);
+                            opacity: 0;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            transition: $transition;
+                            color: $white;
+                            padding: 25px;
+                            text-align: center;
+.views-field-view-node a {
+              color: $white;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat SemiBold';
+  text-decoration: underline;
+}
+
+              
+                        }
+                    }
+
+                    .item-contenido {
+                        padding: 25px;
+                        border-bottom: 4px solid #eee;
+                        transition: $transition;
+
+                        .views-field-field-servicio {
+                            color: $red;
+                            font-size: 0.75rem;
+                            font-family: 'Montserrat SemiBold';
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                        }
+
+
+                        .views-field-title a {
+                            @include title-content;
+                            color: $dark;
+                        }
+
+                        .views-field-field-ubicacion {
+                            display: inline-flex;
+                            font-size: 0.8rem;
+                            color: #888;
+                            margin-top: 5px;
+
+                            &::before {
+                                content: "\f3c5";
+                                font-family: $font-icon-free;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

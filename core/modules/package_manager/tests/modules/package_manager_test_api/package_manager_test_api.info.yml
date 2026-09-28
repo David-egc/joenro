@@ -1,0 +1,11 @@
+name: 'Package Manager Test API'
+description: 'Provides API endpoints for doing stage operations in functional tests.'
+type: module
+package: Testing
+dependencies:
+  - auto_updates:package_manager
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671650

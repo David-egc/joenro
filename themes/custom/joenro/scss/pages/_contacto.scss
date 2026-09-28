@@ -1,0 +1,31 @@
+.path-contact {
+    background: $light-gray;
+
+    .region-content {
+        margin: 60px 0 80px;
+        background: $white;
+        padding: 50px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        margin-inline: 45px;
+
+        .block-page-title-block {
+            text-align: left;
+
+            h1 {
+                @include title-view($dark);
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    width: 50px;
+                    height: 3px;
+                    background: $red;
+                }
+            }
+        }
+        
+}
+}

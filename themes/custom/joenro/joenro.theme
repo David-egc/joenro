@@ -1,0 +1,62 @@
+<?php 
+
+
+
+use Drupal\Core\Render\Element\StatusMessages;
+
+
+
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function joenro_preprocess_html(&$variables) {
+     $variables['base_url'] = $GLOBALS['base_url'];
+     $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+     $variables['#attached']['drupalSettings']['current_lang'] = $language;
+     $variables['current_lang'] = $language;
+     $variables['#attached']['drupalSettings']['language'] = $language;
+
+     //obtengo el id del termino de taxonomia actual si es uno y se lo paso a la plantilla
+    if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical') {
+      //$term_id = \Drupal::routeMatch()->getRawParameter('taxonomy_term');
+
+      $taxonomy = \Drupal::routeMatch()->getParameter('taxonomy_term');
+      $tid = $taxonomy->id();
+
+      $variables['current_taxonomy_term_id'] = $tid;
+    }
+
+
+    // verifico si estoy en un nodo y si es asi obtengo su id y lo paso a la plantilla
+    if (\Drupal::routeMatch()->getRouteName() == 'entity.node.canonical') {
+      $node = \Drupal::routeMatch()->getParameter('node');
+      $nid = $node->id();
+      $variables['current_node_id'] = $nid;
+    }
+
+}
+
+
+
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function joenro_preprocess_block(array &$variables) {
+  $content = $variables['content'];
+
+  // Verifica si el bloque es un bloque de contenido personalizado.
+  if (isset($content['#block_content']) && $content['#block_content'] instanceof \Drupal\block_content\BlockContentInterface) {
+
+    // Obtiene el bundle del bloque.
+    $bundle = $content['#block_content']->bundle();
+
+    // Normaliza el nombre para usarlo como clase CSS.
+    $class = 'block--bundle--' . str_replace('_', '-', $bundle);
+
+    // Agrega la clase al array de atributos del bloque.
+    $variables['attributes']['class'][] = $class;
+  }
+}
+

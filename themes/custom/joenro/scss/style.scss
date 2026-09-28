@@ -1,0 +1,56 @@
+@import 'utils/vars';
+@import 'utils/fonts';
+@import 'utils/mixin';
+@import 'utils/forms';
+@import 'utils/general';
+
+
+
+
+// Importando secciones
+
+@import 'sections/menu';
+@import 'sections/carrusel';
+@import 'sections/estadisticas';
+@import 'sections/nosotros';
+@import 'sections/clientes';
+@import 'sections/casos_exito';
+@import 'sections/testimonios';
+@import 'sections/blog';
+@import 'sections/contacto';
+@import 'sections/footer';
+
+
+
+// Importando páginas
+
+@import 'pages/home';
+@import 'pages/nosotros';
+@import 'pages/servicios';
+@import 'pages/proyectos';
+@import 'pages/blog';
+@import 'pages/contenido-secundario';
+@import 'pages/contacto';
+@import 'pages/busqueda';
+@import 'pages/faq';
+
+
+// Importando nodos
+@import 'node/servicio';
+@import 'node/proyecto';
+@import 'node/articulo';
+@import 'node/directivo';
+@import 'node/testimonio';
+@import 'node/suceso';
+@import 'node/promocion';
+@import 'node/sede';
+@import 'node/cliente';
+@import 'node/pagina_basica';
+@import 'node/video';
+@import 'node/faq';
+// Importando responsive
+@import 'responsive/sm';
+@import 'responsive/md';
+@import 'responsive/lg';
+@import 'responsive/xl';
+@import 'responsive/xxl';

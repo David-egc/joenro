@@ -1,0 +1,29 @@
+.region-blog {
+    #block-joenro-views-block-blog-block-1 {
+        text-align: center;
+
+        h2 {
+            @include title-view($dark);
+            @include title-view-after;
+        }
+
+        .view-content {
+            text-align: initial;
+
+            .item-blog {
+
+                .views-field-title {
+                    margin-top: 15px;
+
+                    a {
+                        @include title-content;
+                        color: $dark;
+                        margin-top: 15px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

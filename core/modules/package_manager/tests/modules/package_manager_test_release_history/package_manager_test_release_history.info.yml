@@ -1,0 +1,12 @@
+name: 'Package Manager Test Release history'
+type: module
+description: 'Provides a mechanism for serving fake release history metadata in functional tests.'
+package: Testing
+dependencies:
+  - drupal:update
+  - drupal:update_test
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671650

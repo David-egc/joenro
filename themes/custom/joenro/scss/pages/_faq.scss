@@ -1,0 +1,97 @@
+.path-faq {
+
+    .region-content {
+
+        .view-faq {
+            .view-header {
+                background: $light-gray;
+                padding: 120px 0 60px;
+                text-align: center;
+
+                span {
+                    color: $red;
+                }
+            }
+
+            .view-content {
+                margin: 60px 0 120px;
+
+                .accordion {
+                    .accordion-item {
+                        border: none;
+                        border-bottom: 1px solid #eee;
+
+                        .accordion-button:not(.collapsed) {
+                            color: $dark;
+                        }
+
+                        .accordion-header {
+                            margin-bottom: 15px;
+
+
+                            .accordion-button {
+                                background: transparent;
+
+                                &:focus {
+                                    box-shadow: none !important;
+                                }
+
+                                &:hover {
+                                    .views-field-title {
+                                        color: $red;
+                                    }
+                                }
+
+
+
+                                &.collapsed::after {
+                                    content: '\f067';
+                                    font-family: $font-icon-free;
+                                    background-image: none;
+                                    color: $red;
+
+
+                                }
+
+                                &::after {
+                                    content: '\f068';
+                                    width: initial;
+                                    font-family: $font-icon-free;
+                                    background-image: none;
+                                    color: $red;
+                                }
+
+
+                                .views-field-title span {
+                                    padding: 25px 0;
+                                    cursor: pointer;
+                                    font-family: 'Oswald SemiBold';
+                                    font-size: 1.2rem;
+                                    letter-spacing: 1px;
+                                    transition: $transition;
+                                }
+
+                            }
+                        }
+
+                        .accordion-collapse {
+                            .accordion-body {
+                                .views-field-field-descripcion {
+                                    padding: 0 0 25px 0;
+                                    color: $text-gray;
+                                    font-size: 1rem;
+                                    line-height: 1.8;
+                                }
+                            }
+                        }
+
+
+
+
+
+                    }
+                }
+            }
+        }
+    }
+}

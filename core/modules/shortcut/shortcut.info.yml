@@ -1,0 +1,13 @@
+name: Shortcut
+type: module
+description: 'Allows users to create sets of shortcuts within the site.'
+package: Core
+# version: VERSION
+configure: entity.shortcut_set.collection
+dependencies:
+  - drupal:link
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671650

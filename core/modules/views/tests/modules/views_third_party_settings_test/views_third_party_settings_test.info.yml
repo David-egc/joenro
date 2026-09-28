@@ -1,0 +1,13 @@
+name: 'Third Party Settings Test'
+type: module
+description: 'A dummy module that third party settings tests can depend on'
+package: Testing
+# version: VERSION
+dependencies:
+  - drupal:node
+  - drupal:views
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671649

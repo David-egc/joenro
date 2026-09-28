@@ -1,0 +1,70 @@
+.region-contacto {
+    background: $dark;
+    color: $white;
+    padding: 100px 10px;
+
+    #block-joenro-encabezadocontacto {
+        text-align: center;
+
+        h2 {
+            @include title-view($white);
+            @include title-view-after;
+        }
+    }
+
+    #block-joenro-contacto-2 {
+        .field{
+            margin-bottom: 10px;
+        }
+        .field__label {
+            margin-top: 10px;
+            @include title-content;
+        }
+
+        @include campos-iconos-block-contact;
+    }
+
+    #block-joenro-contactblock {
+        background: $white;
+        color: $color-footer;
+        padding: 30px;
+        border-radius: 5px;
+
+        #contact-message-contacto-form {
+            .form-item {
+                label {
+                    display: none;
+                }
+
+                input[type="text"],
+                textarea,
+                .form-select,
+                input[type="email"] {
+                    width: 100%;
+                    padding: 12px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ddd;
+                    resize: none;
+                }
+
+                textarea {
+                    height: 100px;
+                }
+}
+                .form-actions {
+                    input[type="submit"] {
+                        // background: $red;
+                        // color: $white;
+                        // text-transform: uppercase;
+                        // width: 100%;
+                        // border: none;
+                        @include btn(15px, 35px);
+                        background: $red;
+                        width: 100%;
+                    }
+                }
+
+            }
+
+        }
+    }

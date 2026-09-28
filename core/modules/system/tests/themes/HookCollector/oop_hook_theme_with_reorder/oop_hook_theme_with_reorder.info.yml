@@ -1,0 +1,10 @@
+name: 'OOP hook test theme with reorder attribute'
+type: theme
+description: 'Test theme for OOP hooks.'
+# version: VERSION
+base theme: false
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671650

@@ -1,0 +1,153 @@
+.site-footer {
+    background: $dark;
+    color: #ccc;
+    border-top: 5px solid $red;
+    padding: 80px 0 30px;
+
+    .region-footer1 {
+       
+        #block-joenro-marcadelsitio-2 {
+            margin-bottom: 20px;
+
+            .site-logo {
+                padding-left: 40px;
+            }
+
+        }
+
+        #block-joenro-redessociales {
+            margin-top: 20px;
+
+            ul:not(.contextual-links) {
+                list-style: none;
+                display: flex;
+                gap: 10px;
+                padding: 0;
+
+                li {
+                    a {
+                        font-size: 0;
+
+                        &::before {
+                            font-family: $font-icon-brands;
+                            font-size: 20px;
+                            padding: 10px;
+                            color: $white;
+                            background: $gray;
+                        }
+
+                        &[title="Facebook"],
+                        &[title="Instagram"],
+                        &[title="LinkedIn"],
+                        &[title="Youtube"] {
+                            text-decoration: underline;
+                        }
+
+                        &[title="Facebook"]::before {
+                            content: '\f39e';
+                        }
+
+                        &[title="Instagram"]::before {
+                            content: '\f16d';
+                        }
+
+                        &[title="LinkedIn"]::before {
+                            content: '\f0e1';
+                        }
+
+                        &[title="Youtube"]::before {
+                            content: '\f167';
+                        }
+                    }
+
+                    &:hover {
+                        a::before {
+                            background: $red;
+                            transform: translateY(-3px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #block-joenro-navegacionprincipal-2,
+    #block-joenro-servicios {
+        h2 {
+            @include title-footer-block;
+        }
+
+        ul:not(.contextual-links) {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 12px;
+
+                a {
+                    color: #ccc;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: $transition;
+                }
+
+                &:hover {
+                    a {
+                        color: $red;
+                        padding-left: 5px;
+                    }
+
+                }
+            }
+        }
+    }
+
+    #block-joenro-contacto {
+        h2 {
+            @include title-footer-block;
+        }
+        .field{
+            margin-bottom: 15px;
+            .field__label{
+                font-family: 'Montserrat SemiBold';
+                color: $white;
+            }
+        }
+
+    }
+
+    .linea-footer {
+        border-top: 1px solid #222;
+        padding-top: 30px;
+        color: #666;
+        
+    }
+
+    #block-joenro-copyright {
+        p {
+            margin: 0;
+            font-size: .8rem;
+        }
+    }
+    #block-joenro-piedepagina{
+        text-align: right;
+        ul:not(.contextual-links){
+            display: inline-flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+              
+              padding-right: 10px;
+                a{
+               color: #666;  
+               transition: $transition;
+               font-family: 'Montserrat SemiBold';
+               &:hover{
+                color: $white;
+               }
+            }
+        }
+        }
+    }
+}

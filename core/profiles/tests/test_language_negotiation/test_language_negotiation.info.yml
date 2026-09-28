@@ -1,0 +1,12 @@
+name: Testing language negotiation
+type: profile
+description: 'Minimal profile for running tests related the language negotiation.'
+# version: VERSION
+hidden: true
+install:
+  - drupal:language
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671649

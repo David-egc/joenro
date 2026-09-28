@@ -1,0 +1,9 @@
+name: 'Config install dependency test with mix of enforced and base module dependencies'
+type: module
+package: Testing
+# version: VERSION
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671650

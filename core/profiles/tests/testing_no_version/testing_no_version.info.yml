@@ -1,0 +1,9 @@
+name: 'Testing - No Version'
+type: profile
+description: 'A profile with no version key in its info.yml file.'
+hidden: true
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671649

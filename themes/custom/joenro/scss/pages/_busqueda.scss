@@ -1,0 +1,66 @@
+.path-search {
+
+  .region-content {
+    padding: 0 0 60px;
+
+    text-align: center;
+    border-bottom: 1px solid #eee;
+
+
+    .block-page-title-block {
+      background: $light-gray;
+      padding-top: 140px;
+
+      h1 {
+        @include title-view($dark);
+        @include title-view-after;
+      }
+    }
+
+    h2 {
+      @include title-view($dark);
+      @include title-view-after;
+
+      margin-top: 40px;
+
+    }
+
+
+
+    ol {
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      padding-top: 40px;
+      color: $text-gray;
+      font-size: 0.9rem;
+      border-top: 1px solid #eee;
+
+      list-style: none;
+
+
+      li {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+
+        h3 {
+          font-size: 1.4rem;
+          margin-bottom: 8px;
+
+          a {
+            color: $dark;
+
+            transition: 0.3s;
+          }
+        }
+
+        p {
+          color: $text-gray;
+          font-size: 1rem;
+          margin-bottom: 12px
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+name: Disable HTML5 validation
+description: 'Disables HTML5 validation in all forms'
+type: module
+core_version_requirement: ">=9"
+
+# Information added by Drupal.org packaging script on 2023-09-04
+version: '2.0.0'
+project: 'disable_html5_validation'
+datestamp: 1693858996

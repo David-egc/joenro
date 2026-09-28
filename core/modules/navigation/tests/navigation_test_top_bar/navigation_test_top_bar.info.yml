@@ -1,0 +1,12 @@
+name: Navigation test top bar
+description: 'Provides test functionality for top bar in navigation module'
+package: Testing
+# version: VERSION
+type: module
+dependencies:
+  - drupal:navigation
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671650

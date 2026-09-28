@@ -1,0 +1,39 @@
+{#
+/**
+* @file
+* Theme override to display a view of unformatted rows.
+*
+* Available variables:
+* - title: The title of this group of rows. May be empty.
+* - rows: A list of the view's row items.
+* - attributes: The row's HTML attributes.
+* - content: The row's content.
+* - view: The view object.
+* - default_row_class: A flag indicating whether default classes should be
+* used on rows.
+*
+* @see template_preprocess_views_view_unformatted()
+*/
+#}
+{% if title %}
+<h3>{{ title }}</h3>
+{% endif %}
+
+
+<div class="container">
+  <div class="splide vista-testimonios">
+    
+    <div class="splide__track ">
+      <ul class="splide__list  ">
+
+        {% for row in rows %}
+          <li{{ row.attributes.addClass(default_row_class ? ['views-row', 'splide__slide'] : ['splide__slide']) }}>
+            {{- row.content -}}
+          </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+
+  </div>
+</div>

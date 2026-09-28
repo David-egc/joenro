@@ -1,0 +1,48 @@
+.path-frontpage {
+    .region-content {
+        padding: 100px 0;
+        background: $light-gray;
+
+        .block-page-title-block {
+            text-align: center;
+
+            h1 {
+                @include title-view($dark);
+                @include title-view-after;
+            }
+        }
+
+        .view-servicios {
+            .item-serivce {
+                background: $white;
+                padding: 35px;
+                border: 1px solid #eee;
+                text-align: center;
+                transition: $transition;
+
+                &:hover {
+                    border-color: $red;
+                    transform: translateY(-5px);
+                    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+                }
+
+                .views-field-field-icono {
+                    margin-bottom: 20px;
+
+                    .fas {
+                        font-size: 2.5rem;
+                        color: $red;
+                    }
+                }
+
+                .views-field-title a {
+                    @include title-content;
+                    color: $dark;
+                }
+
+                .views-field-field-subtitulo {}
+            }
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+{
+    "liveSassCompile.settings.compileOnWatch": false,
+    "liveSassCompile.settings.watchOnLaunch": false,
+    "liveSassCompile.settings.useNewCompiler": true,
+    "liveSassCompile.settings.showOutputWindowOn": "Debug",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/themes/custom/joenro/css",
+            "savePathReplacementPairs": null
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [
+        "/themes/custom/joenro/scss/style.scss",
+    ],
+    "liveSassCompile.settings.partialsList": [
+        "/themes/custom/joenro/scss/*/*",
+    ],
+    "twiggy.framework": "ignore",
+    "git.ignoreLimitWarning": true,
+    "kiroAgent.configureMCP": "Disabled"
+}

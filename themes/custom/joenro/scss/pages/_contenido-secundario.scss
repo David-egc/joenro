@@ -1,0 +1,195 @@
+.path-blog {
+
+    .contenido_secundario {
+        #block-joenro-servicios-2 {
+            background: $white;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+
+            h2 {
+                border-left: 4px solid $red;
+                padding-left: 15px;
+                margin-bottom: 25px;
+                font-size: 1.2rem;
+            }
+
+            ul:not(.contextual-links) {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    border-bottom: 1px solid #eee;
+                    padding: 12px 0;
+                    transition: $transition;
+
+                    a {
+                        font-family: 'Montserrat SemiBold';
+                        color: $text-gray;
+                        font-size: 0.85rem;
+                        font-weight: 600;
+                        transition: 0.3s;
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+
+                        &::before {
+                            content: "\f0da";
+                            color: $red;
+                            margin-right: 10px;
+                            font-family: $font-icon-free;
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    &:hover {
+                        color: $red;
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+
+        #block-joenro-proyectoenmente {
+            background: #0a0a0a;
+            padding: 40px;
+            border-radius: 4px;
+            color: $white;
+            margin-bottom: 40px;
+
+            h2 {
+                @include title-view($white);
+                font-size: 1.3rem;
+                margin-bottom: 25px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -8px;
+                    width: 40px;
+                    height: 3px;
+                    background: $red;
+                }
+            }
+
+            .field {
+                font-size: 0.85rem;
+                color: #999;
+                margin-bottom: 20px;
+            }
+
+            .field--name-field-enlace {
+                a {
+                    display: block;
+                    background: $red;
+                    color: $white;
+                    text-align: center;
+                    padding: 15px;
+                    text-decoration: none;
+                    font-family: 'Oswald SemiBold';
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    transition: $transition;
+
+                }
+
+                &:hover {
+                    a {
+                        background: #b30000;
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+
+        }
+
+        #block-joenro-views-block-blog-block-3 {
+            margin-bottom: 40px;
+            background: $white;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+
+            h2 {
+                border-left: 4px solid $red;
+                padding-left: 15px;
+                margin-bottom: 25px;
+                font-size: 1.2rem;
+            }
+
+            .view-content {
+                .item-blog {
+                    border-bottom: 1px solid #eee;
+                    padding: 12px 0;
+
+                    .views-field-title a {
+
+                        color: $text-gray;
+                        font-family: 'Montserrat SemiBold';
+                        font-size: 0.85rem;
+                        font-weight: 600;
+                        transition: 0.3s;
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+.path-contact {
+    .region-contenido-secundario {
+        margin-top: 60px;
+
+        #block-joenro-contacto-3 {
+            background: #0a0a0a;
+            color: $white;
+            padding: 40px;
+            border-radius: 4px;
+
+            h2 {
+                @include title-content;
+                color: $red;
+                margin-bottom: 20px;
+            }
+
+            .field {
+                font-size: 0.9rem;
+                color: #ccc !important;
+
+                .field__item::before {
+                    color: $red !important;
+                    margin-right: 15px !important;
+                    margin-top: 5px;
+                }
+
+                .field__label {
+                    display: none !important;
+                }
+            }
+
+            @include campos-iconos-block-contact;
+
+        }
+
+        #block-joenro-mapa {
+            margin-top: 30px;
+            width: 100%;
+            height: 405px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+            z-index: 5;
+
+            #map_contact {
+                position: relative;
+                z-index: 5;
+            }
+
+        }
+    }
+
+}

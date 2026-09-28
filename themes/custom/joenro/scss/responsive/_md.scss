@@ -1,0 +1,357 @@
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .page-node-type-pagina-basica.node-26 {
+
+    .region-nosotros {
+      padding: 50px 0 100px;
+      text-align: left;
+      display: grid;
+      grid-template-areas:
+        'block1 block1  .  .'
+        'block1 block1  block4 block4'
+        'block2 block3  block4 block4'
+        'block2 block3  block4 block4'
+        'block5 block5  block7 block8'
+        'block6 block6   block9 block10  '
+        'block6 block6  block9 block10';
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(4, auto);
+      gap: 20px;
+
+      #block-joenro-ingenieriaconproposito {
+        grid-area: block1;
+
+        .field {
+
+          h2 {
+            @include title-view($dark);
+
+            em {
+              color: $red;
+            }
+
+            margin-bottom: 10px;
+          }
+
+        }
+      }
+
+      #block-joenro-mision {
+        text-align: left;
+        grid-area: block2;
+        background: $light-gray;
+        padding: 30px;
+        border-top: 4px solid $red;
+
+
+
+      }
+
+      #block-joenro-vision {
+        text-align: left;
+        grid-area: block3;
+        background: $light-gray;
+        padding: 30px;
+        border-top: 4px solid $red;
+      }
+
+      #block-joenro-imagennosotros1 {
+        grid-area: block4;
+
+        .field__item {
+          width: 500px;
+          margin: 0 auto;
+          border-radius: 4px;
+          box-shadow: 20px 20px 0 $red;
+
+          img {
+            border-radius: 4px;
+          }
+        }
+      }
+
+      #block-joenro-nuestraesencia {
+        grid-area: block5;
+
+        h2 {
+          @include title-view($dark);
+          margin-bottom: 10px;
+        }
+
+
+      }
+
+      #block-joenro-nosotros2 {
+        grid-area: block6;
+      }
+
+      #block-joenro-tecnologia {
+        grid-area: block7;
+        @include card-page-nosotros;
+      }
+
+      #block-joenro-seguridad {
+        grid-area: block8;
+        @include card-page-nosotros;
+      }
+
+      #block-joenro-agilidad {
+        grid-area: block9;
+        @include card-page-nosotros;
+      }
+
+      #block-joenro-sostenibilidad {
+        grid-area: block10;
+        @include card-page-nosotros;
+      }
+    }
+.region-content{
+ .view-nuestra-evolucion {
+            padding: 50px 0 100px;
+
+            .view-content {
+                .vista-evolucion {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 2px;
+                        height: 100%;
+                        background: #ddd;
+                    }
+
+                    .views-row {
+                        position: relative;
+                        width: 40%;
+                        padding: 20px 40px;
+                    }
+
+                    .views-row:nth-child(even) {
+                        margin-left: 50%;
+                        text-align: left;
+                    }
+                }
+
+                .views-row:nth-child(odd) {
+                    position: relative;
+                    margin-left: 10%;
+                    padding: 20px 40px;
+                    text-align: right;
+
+                }
+
+
+
+
+
+                .views-field-field-fecha {
+                    font-family: 'Oswald';
+                    font-size: 2rem;
+                    color: $red;
+                    display: block;
+
+                }
+
+                .views-field-title {
+                    @include title-content;
+                    color: $dark;
+                }
+            }
+
+
+
+
+        }
+  }
+}
+
+  .path-servicios {
+    .region-clientes {
+      background: $dark;
+      color: $white;
+      padding: 100px 0;
+      display: grid;
+      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+        '. header header header header .'
+        '. block1 block2 block3 block4 . ';
+
+
+
+
+
+      #block-joenro-comotrabajamos {
+        text-align: center;
+        grid-area: header;
+
+        h2 {
+          @include title-view($white);
+          @include title-view-after;
+        }
+      }
+
+
+      #block-joenro-inspeccion {
+        grid-area: block1;
+        @include icono-block('01');
+      }
+
+      #block-joenro-diagnostico {
+        grid-area: block2;
+        @include icono-block('02');
+      }
+
+      #block-joenro-ejecucion {
+        grid-area: block3;
+        @include icono-block('03');
+      }
+
+      #block-joenro-garantia {
+        grid-area: block4;
+        @include icono-block('04');
+      }
+    }
+
+    .region-casos-exito {
+      #block-joenro-mantenimientopredictivo {
+        .contenido {
+          order: 1 ;
+        }
+        .imagen {
+          order: 2;
+        }
+      }
+    }
+  }
+.path-user {
+    .region-content {
+        margin-top: 180px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        background: $white;
+        width: 100%;
+        max-width: 40%;
+        padding: 50px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+        border-top: 4px solid $red;
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 35px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+
+        .block-local-tasks-block {
+            text-align: center;
+
+            .tabs-wrapper {
+                display: inline-block;
+
+                ul.tabs--primary {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 20px;
+                    padding-bottom: 20px;
+                    margin-bottom: 35px;
+                    border-bottom: 1px solid #eee;
+
+                    li.tabs__tab.is-active a {
+                        background: $dark;
+                        color: $white !important;
+                        border: none;
+                        padding: 10px;
+                        font-family: 'Oswald';
+                        text-transform: uppercase;
+                        font-size: 0.8rem;
+                        cursor: pointer;
+                    }
+
+                    li.tabs__tab a {
+                        color: #002D9C !important;
+
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+
+        form[data-drupal-selector="user-login-form"],
+        form[data-drupal-selector="user-pass"] {
+            .form-item {
+                label {
+                    display: none;
+                }
+
+                display:inline-flex;
+                margin-bottom: 25px;
+                position: relative;
+                border-bottom: 2px solid #ddd;
+
+                input[type="text"],
+                input[type="password"] {
+                    width: 100%;
+                    border: none;
+                    padding: 12px 10px 12px 30px;
+                    font-family: 'Montserrat';
+                    font-size: 1rem;
+                    outline: none;
+                    background: transparent;
+
+                }
+            }
+
+            .form-item-name {
+                &::before {
+                    content: "\f007";
+                    color: $dark;
+                    font-family: $font-icon-free;
+                    margin-top: 15px;
+                }
+            }
+
+            .form-item-pass {
+                &::before {
+                    content: "\f023";
+                    color: $dark;
+                    font-family: $font-icon-free;
+                    margin-top: 15px;
+                }
+            }
+
+            .form-actions {
+                input[type="submit"] {
+                    width: 100%;
+                    @include btn-download($dark, $white, $dark, $white, $red);
+
+                    &:hover {
+                        border: $red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+form[data-drupal-selector="contact-message-contacto-form"] {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "name email"
+        "service service"
+        "message message"
+        "button button";
+    gap: 20px;
+}
+ }
+

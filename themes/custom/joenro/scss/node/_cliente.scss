@@ -1,0 +1,75 @@
+.page-node-type-cliente {
+
+    .region-content {
+        padding: 30px 0 120px;
+
+        #block-joenro-titulodelapagina {
+            h1 {
+                display: none;
+            }
+        }
+
+        .node--type-cliente {
+            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 70vh;
+
+            .field--name-field-imagen {
+                width: 100%;
+                max-width: 500px;
+                background: $light-gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 40px;
+                border: 1px solid #eee;
+                transition: $transition;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    border-color: $red;
+                    transform: translateY(-5px);
+                }
+
+
+            }
+
+            h2 {
+                margin-bottom: 30px;
+                    font-size: 3.5rem;
+                    margin-bottom: 30px;
+                    color: $dark;
+                    letter-spacing: 1px;
+              
+            }
+
+            .enlace {
+
+                padding: 18px 50px;
+                background: $red;
+                color: $white;
+                text-decoration: none;
+                font-family: 'Oswald SemiBold';
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 0.9rem;
+                transition: $transition;
+
+                &:hover {
+                    background: $dark;
+                    transform: scale(1.05);
+                }
+
+            }
+        }
+    }
+}

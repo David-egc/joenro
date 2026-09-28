@@ -1,0 +1,45 @@
+.page-node-type-suceso {
+    .region-content {
+            padding: 90px 0 120px;
+        h1 {
+            display: none;
+        }
+
+        .node--type-suceso {
+        
+            margin: auto;
+            min-height: 65vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .contenido-nodo {
+                border-left: 10px solid $red;
+                padding-left: 40px;
+
+                .field--name-field-fecha {
+                    font-family: 'Oswald SemiBold', sans-serif;
+                    font-size: 8rem;
+                    color: $red;
+                    line-height: 1;
+                    font-weight: 700;
+                    letter-spacing: -2px;
+                }
+
+                h2 {
+                    font-size: 3rem;
+                    color: $dark;
+                    margin-bottom: 20px;
+                    letter-spacing: 1px;
+                }
+
+                .field--name-field-subtitulo {
+                    font-size: 1.2rem;
+                    color: $text-gray;
+
+                }
+            }
+
+        }
+    }
+}

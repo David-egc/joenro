@@ -1,0 +1,32 @@
+name: Joenro
+description: JOENRO CONSTRUCTION AND MAINTENANCE GROUP, S.R.L. 
+type: theme
+base theme: false
+core_version_requirement: ^11
+logo: logo.png
+
+libraries:
+  - joenro/splide
+  - joenro/fontawesome
+  - joenro/bootstrap
+  - joenro/leaflet
+  - joenro/globalstyling
+
+regions:
+  menu: "Menu"
+  menu_responsive: "Menu responsive"
+  carrusel: "Carrusel"
+  estadisticas: "Estadisticas"
+  nosotros:  "Seccíon Nosotros"
+  content: "Contenido principal"
+  contenido_secundario: "Contenido secundario"
+  clientes: "Sección Clientes"
+  casos_exito: "Sección Casos de éxito"
+  testimonios: "Sección Testimonios"
+  blog: "Sección Blog"
+  contacto: "Sección de Contacto"
+  footer1: "Footer 1"
+  footer2: "Footer 2"
+  footer3: "Footer 3"
+  footer4: "Footer 4"
+  footer5: "Footer 5"

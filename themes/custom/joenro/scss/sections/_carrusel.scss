@@ -1,0 +1,118 @@
+.region-carrusel {
+
+    #block-joenro-views-block-carrusel-block-1 {
+        .view-content {
+            .slider {
+                .slide {
+                    .carousel-inner {
+                        .carousel-item {
+                            .imagen {
+                                position: relative;
+
+                                .views-field-field-imagen {
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 100%;
+                                        background-color: rgba(0, 0, 0, 0.5);
+
+
+                                    }
+
+                                    img {
+                                        width: 100%;
+                                        height: 90vh;
+                                        object-fit: cover;
+                                    }
+                                }
+
+                                .titulo-descripcion {
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    text-align: center;
+                                    color: $white;
+
+                                    .titulo {
+                                        .views-field-title {
+                                            font-size: clamp(2.5rem ,2vw,3.5rem) ;
+                                            margin-bottom: 1rem;
+                                            line-height: 1.1;
+                                            color: $white;
+                                            text-transform: uppercase;
+                                            font-family: 'Oswald SemiBold', sans-serif;
+                                        }
+                                    }
+
+                                    .descripcion {
+                                        .views-field-field-descripcion {}
+                                    }
+
+                                    .enlace {
+
+
+                                        .views-field-field-enlace {
+                                            display: inline-flex;
+                                            margin-top: 30px;
+
+                                            a {
+                                                @include btn(15px, 35px);
+
+                                            }
+
+                                            // &:hover {
+                                            //     a {
+                                            //         background: $color_azul;
+                                            //         color: $color_blanco;
+                                            //     }
+
+
+
+
+                                            // }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+   .block-tipo-encabezado {
+    position: relative;
+       .field--name-field-imagen{
+        position: absolute;
+        height: 100%;
+           img {
+            height: 100%;
+            object-fit: cover;
+        }
+         }
+          &::after {
+            content: '';
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+        }
+      
+     
+    }
+      
+
+        .contenido {
+        @include encabezado;
+        }
+    }

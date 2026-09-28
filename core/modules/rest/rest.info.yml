@@ -1,0 +1,12 @@
+name: 'RESTful Web Services'
+type: module
+description: 'Provides a framework for exposing REST resources.'
+package: Web services
+# version: VERSION
+dependencies:
+  - drupal:serialization
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671650

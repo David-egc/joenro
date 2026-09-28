@@ -1,0 +1,75 @@
+
+
+bootstrap:
+  css:
+    theme:
+      vendor/bootstrap/css/bootstrap.min.css: {}
+  js:
+    vendor/bootstrap/js/bootstrap.bundle.min.js: {}
+
+fontawesome:
+  css:
+    theme:
+      vendor/fontawesome/css/fontawesome.min.css: {}
+      vendor/fontawesome/css/brands.min.css: {}
+      vendor/fontawesome/css/solid.min.css: {}
+
+slick:
+  css:
+    theme:
+      vendor/slick/slick.css: {}
+      vendor/slick/slick-theme.css: {}
+  js:
+    vendor/slick/slick.js: {}
+    vendor/slick/slick.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal
+    - core/jquery.once
+
+
+
+leaflet:
+  css:
+    theme:
+      vendor/leaflet/dist/leaflet.css: {}
+  js:
+    vendor/leaflet/dist/leaflet.js: {}
+
+global-js:
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal
+    - core/jquery.once
+  
+
+globalstyling:
+  css:
+    theme:
+     
+      css/leaflet.css: {}
+      css/style.css: {}
+
+  js:
+   
+    js/leaflet.js: {}
+    js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal
+    - core/once
+    - joenro/slick
+
+
+splide:
+  css:
+    theme:
+      vendor/splide/dist/css/splide.min.css: {}
+  js:
+    vendor/splide/dist/js/splide.min.js: {}
+  dependencies:
+    - core/drupal
+    - core/once

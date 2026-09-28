@@ -1,0 +1,60 @@
+.page-node-type-pagina-basica:not(.node-26) {
+    .region-content {
+        // padding: 220px 0 0;
+        background: $white;
+
+        #block-joenro-titulodelapagina {
+            background: $light-gray;
+            padding: 180px 0 60px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+
+        h1 {
+            display: block;
+        }
+    }
+
+
+    .node--type-pagina-basica {
+        .contenido {
+            text-align: left;
+            border-left: 4px solid $red;
+            padding-left: 40px;
+            margin-bottom: 120px;
+        }
+
+
+        p {
+            font-size: 1rem;
+            color: $text-gray;
+            margin-bottom: 20px;
+        }
+
+        ul:not(.contextual-links) {
+            margin-bottom: 30px;
+            padding-left: 20px;
+            list-style: none;
+
+            li {
+                position: relative;
+                margin-bottom: 15px;
+                color: $text-gray;
+                padding-left: 25px;
+
+                &::before {
+                    content: "\f054";
+                    font-family: $font-icon-free;
+                    font-weight: 900;
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    color: $red;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+
+}

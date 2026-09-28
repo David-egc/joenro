@@ -1,0 +1,427 @@
+.page-node-type-pagina-basica.node-26 {
+    .region-nosotros {
+        padding: 50px 0 100px;
+        text-align: left;
+        display: grid;
+        // grid-template-areas:
+        //     'block1 block1  .  .'
+        //     'block1 block1  block4 block4'
+        //     'block2 block3  block4 block4'
+        //     'block2 block3  block4 block4'
+        //     'block5 block5  block7 block8'
+        //     'block6 block6   block9 block10  '
+        //     'block6 block6  block9 block10';
+        // grid-template-columns: repeat(4, auto);
+        // grid-template-rows: repeat(4, auto);
+        // gap: 20px;
+        // grid-template-areas:
+        // 'block-1 block1'
+        // 'block2 block2'
+        // 'block3 block3'
+        // 'block4 block4'
+        // 'block5 block5'
+        // 'block6 block6'
+        // 'block7 block7'
+        // 'block8 block8'
+        // 'block9 block9'
+        // 'block10 block10';
+        // grid-template-columns: repeat(1, auto);
+        //          grid-template-rows: repeat(10, auto);
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 20px;
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        i {
+            font-size: 2rem;
+            color: $red;
+            margin-bottom: 15px;
+        }
+
+        #block-joenro-ingenieriaconproposito {
+
+            .field {
+
+                h2 {
+                    @include title-view($dark);
+
+                    em {
+                        color: $red;
+                        font-style: normal;
+                    }
+
+                    margin-block: 10px;
+
+                }
+
+            }
+        }
+
+        #block-joenro-mision {
+            text-align: left;
+
+            background: $light-gray;
+            padding: 30px;
+            border-top: 4px solid $red;
+
+
+
+        }
+
+        #block-joenro-vision {
+            text-align: left;
+
+            background: $light-gray;
+            padding: 30px;
+            border-top: 4px solid $red;
+        }
+
+        #block-joenro-imagennosotros1 {
+
+
+            .field__item {
+
+                margin: 0 auto;
+                border-radius: 4px;
+                box-shadow: 20px 20px 0 $red;
+
+                img {
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        #block-joenro-nuestraesencia {
+            margin-top: 50px;
+
+            h2 {
+                @include title-view($dark);
+                margin-bottom: 10px;
+            }
+
+
+        }
+
+        #block-joenro-tecnologia,
+        #block-joenro-seguridad {
+            margin-top: 50px;
+        }
+
+        #block-joenro-tecnologia,
+        #block-joenro-seguridad,
+        #block-joenro-agilidad,
+        #block-joenro-sostenibilidad {
+
+            @include card-page-nosotros;
+        }
+
+    }
+
+    .contenido-principal {
+        padding-bottom: 0 !important;
+    }
+
+    .region-content {
+        background: $light-gray;
+        padding-top: 50px;
+        padding-bottom: 0 !important;
+        text-align: center;
+
+    
+
+        .block-page-title-block {
+            h1 {
+                display: none;
+            }
+        }
+
+        h2 {
+            @include title-view($dark);
+            margin-bottom: 0;
+        }
+
+        .view-nuestra-evolucion {
+            padding: 50px 0 100px;
+
+            .view-content {
+                .vista-evolucion {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        // left: 50%;
+                        left: 0;
+                        width: 2px;
+                        height: 100%;
+                        background: #ddd;
+                    }
+
+                    .views-row {
+                        position: relative;
+                        // width: 40%;
+                        padding: 20px 40px;
+                    }
+
+                    // .views-row:nth-child(even) {
+                    //     margin-left: 50%;
+                    //     text-align: left;
+                    // }
+                }
+
+                // .views-row:nth-child(odd) {
+                //     position: relative;
+                //     margin-left: 10%;
+                //     padding: 20px 40px;
+                //     text-align: right;
+
+                // }
+
+
+
+
+
+                .views-field-field-fecha {
+                    font-family: 'Oswald';
+                    font-size: 2rem;
+                    color: $red;
+                    display: block;
+
+                }
+
+                .views-field-title {
+                    @include title-content;
+                    color: $dark;
+                }
+            }
+
+
+
+
+        }
+
+
+        #block-joenro-views-block-videos-block-1 {
+            padding: 80px 0;
+            background: $white;
+            text-align: center;
+
+            .views-field-title {
+                @include title-view($dark);
+                font-size: 1.5em;
+                font-family: 'Montserrat SemiBold';
+                margin-bottom: 0;
+            }
+
+            .youtube-container {
+                max-width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+
+                #youtube-field-player {
+
+                    display: inline-block;
+                    border: 10px solid $dark;
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+
+        #block-joenro-views-block-liderazgo-y-experiencia-block-1 {
+            padding: 100px 10px;
+            background: $light-gray;
+            text-align: left;
+
+            h2 {
+                @include title-view($dark);
+                margin-bottom: 5px;
+                margin-left: 76px;
+
+            }
+
+            .view-content {
+                text-align: center;
+
+                .item {
+                    background: $white;
+                    text-align: center;
+                    transition: $transition;
+                    border-bottom: 0px solid $red;
+
+                    &:hover {
+                        transform: translateY(-10px);
+                        border-bottom-width: 5px;
+
+                        .views-field-field-imagen {
+                            img {
+                                filter: grayscale(0%);
+                            }
+                        }
+                    }
+
+                    .views-field-field-imagen {
+                        img {
+                            filter: grayscale(100%);
+                            transition: $transition;
+                        }
+                    }
+
+                    .contenido {
+                        padding: 25px;
+
+                        .views-field-title {
+                            @include title-content;
+                            color: $dark;
+                        }
+
+                        .views-field-field-cargo {
+                            @include title-content;
+                            color: $red;
+                        }
+                    }
+
+                }
+            }
+        }
+
+
+
+
+        #block-joenro-views-block-sedes-block-1 {
+
+            .view-content {
+                display: flex;
+                flex-wrap: nowrap;
+                background: $dark;
+            }
+
+            .views-row {
+                flex: 1; // 🔥 ancho fijo (NO se encoge)
+                height: 400px;
+                position: relative;
+                overflow: hidden;
+                transition: $transition;
+            }
+
+            .item {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                cursor: pointer;
+                color: $white;
+
+                .views-field-field-imagen {
+                    display: flex;
+                    height: 100%;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: $transition;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    background: rgba(0, 0, 0, 0.5);
+                    transition: 0.4s ease;
+                    z-index: 1;
+                }
+
+                .contenido {
+                    position: absolute;
+                    z-index: 2;
+
+                    .views-field-title {
+                        @include title-content;
+                        font-size: 3rem;
+
+                        span {
+                            display: block;
+                            min-width: 350px;
+                        }
+                    }
+
+                    .views-field-field-ubicacion {
+
+                        font-weight: 300;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        font-size: 0.9rem;
+                    }
+
+                }
+            }
+
+            // 🔥 efecto hover SIN afectar layout
+            .views-row:hover {
+                flex: 1.4; // solo visual
+                z-index: 2;
+            }
+
+            .views-row:hover .item::before {
+                background: rgba(230, 0, 0, 0.7);
+            }
+
+
+        }
+
+
+    }
+
+    #block-joenro-listoparaconstruirelfuturo {
+        padding: 40px;
+        color: $white;
+        text-align: center;
+        background: fixed center/cover url('../img/bg-download-file.jpeg');
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(230, 0, 0, 0.88);
+
+        }
+
+        .construir-futuro {
+            position: relative;
+            z-index: 1;
+            padding: 40px;
+
+            h2 {
+                @include title-view($white);
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+
+            .field {
+                p {
+                    font-size: 1.25rem;
+                    margin-bottom: 35px;
+                    opacity: 0.95;
+                    font-weight: 300;
+                }
+            }
+
+            .download-file {
+                @include btn-download($dark, $white, $dark, $dark, transparent);
+            }
+        }
+    }
+
+}

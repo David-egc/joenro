@@ -1,0 +1,249 @@
+.page-node-type-servicio {
+
+    .region-content {
+        .node--type-servicio {
+
+            .field--name-field-subtitulo {
+                font-size: 2.5rem;
+                margin-bottom: 25px;
+                border-left: 5px solid $red;
+                padding-left: 20px;
+                font-family: 'Oswald', sans-serif;
+                text-transform: uppercase;
+            }
+
+            .field--name-field-imagen {
+                border-radius: 4px;
+                margin-bottom: 40px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .field--name-field-descripcion {
+                font-size: 1.1rem;
+                color: $text-gray;
+                margin-bottom: 30px;
+            }
+
+            .compartir {
+                border-top: 1px solid #eee;
+                padding-top: 30px;
+                margin-top: 50px;
+                display: flex;
+                align-items: last baseline;
+                align-items: center;
+                gap: 20px;
+
+                .texto {
+                    font-family: 'Montserrat SemiBold';
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                }
+
+                .a2a_button_facebook .a2a_label,
+   
+                svg {
+                    display: none;
+                }
+
+                span.a2a_s_facebook {
+                    background-color: transparent !important;
+                    width: 17px;
+                    height: 25px;
+                    margin-bottom: 10px;
+
+                    &::after {
+                        content: '\f39e';
+                        font-family: $font-icon-brands;
+                        color: $dark;
+                        font-size: 1.1rem;
+                        vertical-align: bottom;
+                    }
+                }
+                .a2a_button_x.a2a_label,
+   
+                svg {
+                    display: none;
+                }
+                  span.a2a_s_x {
+                    background-color: transparent !important;
+                    width: 17px;
+                    height: 25px;
+                     margin-bottom: 10px;
+
+                    &::after {
+                        content: '\f099';
+                        font-family: $font-icon-brands;
+                        color: $dark;
+                        font-size: 1.1rem;
+                        vertical-align: bottom;
+                    }
+                }
+      
+
+            }
+        }
+    }
+
+
+.region-contenido-secundario {
+    padding-left: 30px;
+
+    #block-joenro-servicios-2 {
+        background: $dark;
+        padding: 40px;
+        color: $white;
+        border-radius: 4px;
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 1.6em;
+            margin-bottom: 25px;
+            color: $red;
+        }
+
+        ul:not(.contextual-links) {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                border-bottom: 1px solid #333;
+                padding: 12px 0;
+
+                a {
+                    color: #ccc;
+
+                    font-size: 0.85rem;
+                    transition: 0.3s;
+                    display: flex;
+                    justify-content: space-between;
+                    text-transform: uppercase;
+                }
+
+                a.is-active {
+                    &::after {
+                        content: '\f054';
+                        font-family: $font-icon-free;
+                        font-weight: 900;
+                        color: $red;
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+
+            li a:hover,
+            li a.is-active {
+                color: $white;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    #block-joenro-proyectoenmente {
+        background: $red;
+        color: $white;
+        padding: 40px;
+        text-align: center;
+        border-radius: 4px;
+
+        h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .field--name-body {
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        .field--name-field-enlace {
+            a {
+                background: $white;
+                color: $red;
+                padding: 12px 25px;
+                text-decoration: none;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: 'Oswald SemiBold';
+                transition: 0.3s;
+                display: inline-block;
+            }
+
+            &:hover {
+                a {
+                    background: $dark;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}
+
+.region-clientes {
+    background: $light-gray;
+    padding: 80px 0;
+
+    .view-proyectos {
+        .view-header {
+            text-align: center;
+            margin-bottom: 50px;
+
+            h3 {
+                @include title-view($dark);
+                margin-bottom: 0;
+                span{
+                    color: $red;
+                }
+            }
+
+
+        }
+
+        .view-content {
+            .item-proyecto {
+                position: relative;
+                overflow: hidden;
+                cursor: pointer;
+
+                &:hover {
+                    .item-contenido {
+                        opacity: 1;
+                    }
+                }
+
+                .item-contenido {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(230, 0, 0, 0.9);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: 0.5s;
+                    color: $white;
+                    padding: 20px;
+                    text-align: center;
+
+                    .views-field-title a {
+                        @include title-content;
+                        color: $white;
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
+
+}

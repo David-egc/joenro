@@ -1,0 +1,10 @@
+name: Test display of migrate message
+type: module
+description: Tests the display of migrate messages.
+package: Testing
+# version: VERSION
+
+# Information added by Drupal.org packaging script on 2026-04-20
+version: '11.3.8'
+project: 'drupal'
+datestamp: 1776671650

@@ -1,0 +1,109 @@
+.region-casos-exito {
+    text-align: center;
+
+
+    #block-joenro-views-block-proyectos-block-1 {
+        h2 {
+            @include title-view($dark);
+            @include title-view-after;
+        }
+
+        .view-content {
+            text-align: initial;
+
+            .item-proyecto {
+                .imagenes {
+                    position: relative;
+                    overflow: hidden;
+
+                    &:hover {
+                        .item-contenido {
+                            height: 100%;
+                            opacity: 1;
+                        }
+                    }
+
+                    .item-contenido {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: 0%;
+                        background: rgba(230, 0, 0, 0.9);
+                        color: $white;
+                        padding: 30px;
+                        opacity: 0;
+                        transition: $transition;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                    }
+
+                    .views-field-title a {
+                        @include title-content;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+.path-servicios {
+    .region-casos-exito {
+        padding: 100px 0 0;
+
+        #block-joenro-liderazgoenclimatizacion,
+        #block-joenro-mantenimientopredictivo {
+            margin-bottom: 80px;
+        }
+
+        .imagen {
+            img {
+                border-left: 10px solid $red;
+            }
+
+            margin-bottom: 80px;
+
+        }
+
+        .contenido {
+            h2 {
+                @include title-view($dark);
+                margin-bottom: 20px;
+            }
+
+            margin-bottom: 80px;
+
+        }
+
+        #block-joenro-mantenimientopredictivo {
+            .imagen {
+                order: 1;
+            }
+
+            .contenido {
+                order: 2;
+            }
+        }
+
+
+        #block-joenro-necesitaunainspecciontecnica {
+            background: linear-gradient(rgba(230, 0, 0, 0.9), rgba(230, 0, 0, 0.9)), url('../img/bg-inspeccion.jpeg');
+            background-size: auto, auto;
+            background-size: cover;
+            text-align: center;
+            padding: 80px 10px;
+            color: white;
+
+            .field--name-field-enlace {
+                a {
+                    @include btn-download($white, $white, transparent, $red, $white);
+                }
+            }
+        }
+    }
+}

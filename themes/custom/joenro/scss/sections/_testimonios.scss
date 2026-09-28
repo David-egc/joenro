@@ -1,0 +1,83 @@
+.region-testimonios {
+
+    #block-joenro-views-block-testimonios-block-1 {
+        text-align: center;
+        padding: 100px 0;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/bg-testimonial.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+
+        h2 {
+            @include title-view($white);
+            @include title-view-after;
+            z-index: 2;
+
+        }
+
+        .view-content {
+            text-align: initial;
+
+            .vista-testimonios {
+                padding: 40px 0;
+                .item-testimonio {
+                    background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(5px);
+                    padding: 40px;
+                    min-width: calc(50% - 15px);
+                    border-top: 5px solid $red;
+                    color: $white;
+                    transition: $transition;
+
+                    .views-field-field-descripcion {
+                        font-style: italic;
+                        margin-bottom: 20px;
+                        color: #ddd;
+                    }
+.titulo{
+    gap: 10px;
+}
+.views-field-field-subtitulo{
+    display: inline-flex;
+    &::after{
+    content: '-';
+    margin-left:3px ;
+}
+}
+                    .views-field-title,.views-field-field-subtitulo {
+                        color: $red;
+                        font-size: 1rem;
+                        font-family: 'Montserrat SemiBold';
+                    }
+
+                }
+
+                .splide__arrows {
+                    position: absolute;
+                    bottom: -40px;
+                    width: 100%;
+
+                    .splide__arrow svg {
+                        fill: $white;
+                    }
+
+                    .splide__arrow--prev {
+                        left: 45%;
+                        width: 3em;
+                        height: 3em;
+                        background: $red;
+                    }
+
+                    .splide__arrow--next {
+                        right: 45%;
+                        width: 3em;
+                        height: 3em;
+                        background: $red;
+                    }
+                }
+            }
+
+        }
+    }
+}

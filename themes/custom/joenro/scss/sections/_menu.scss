@@ -1,0 +1,109 @@
+.encabezado .region-menu{
+    background-color: $dark;
+    color:$white;
+  
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 3px solid $red;
+.section-menu{
+    padding: 10px 0;
+}
+  #block-joenro-marcadelsitio{
+    .site-logo{
+        img{
+            height: 60px;
+            width: auto;
+        }
+    }
+  }
+    #block-joenro-navegacionprincipal{
+        text-align: right;
+        @include main-menu;
+    }
+
+    #block-joenro-busqueda{
+
+        ul:not(.contextual-links){
+            display: inline-flex;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li{
+                a{
+                   font-size:0;
+                    &[data-drupal-link-system-path="search"]::before{
+                        content: '\f002';
+                        font-family: $font-icon-free;
+                        color: $white;
+                        font-size: 1rem;
+                        transition: $transition;
+                    }
+
+                }
+                &:hover{
+                    a::before{
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+       #block-joenro-alternadordeidioma {
+      
+        ul.links {
+            display: inline-flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-inline: 20px;
+                position: relative;
+
+                a::before {
+                    content: '';
+                    position: absolute;
+                    right: 22px;
+                    bottom: -5px;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100%;
+                  
+                }
+
+                &[data-drupal-language="en"] a::before {
+                    background-image: url('../img/LangEn.svg');
+                }
+
+                &[data-drupal-language="es"] a::before {
+                    background-image: url('../img/LangEs.svg');
+                }
+                a{
+                    @include title-content;
+                    color: $white;
+                }
+
+                &.is-active {
+                    display: none;
+                }
+
+             
+            }
+
+
+
+        }
+    }
+    #block-joenro-menumovil{
+        .field p {
+            margin-bottom:0;
+        }
+        .btn-primary{
+            color: $white;
+            background: $red;
+            border: none;
+        }
+    }
+
+}

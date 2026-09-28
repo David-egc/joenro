@@ -1,0 +1,65 @@
+.page-node-type-pregunta-frecuente {
+    .region-content {
+       
+
+        #block-joenro-titulodelapagina {
+            background: $light-gray;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+ padding: 90px 0 60px;
+            h1 {
+                font-size: clamp(1.9rem,2vw,3rem);
+                color: $dark;
+                margin-bottom: 10px;
+            }
+        }
+
+        .node--type-pregunta-frecuente {
+            background: $white;
+            text-align: left;
+           
+            padding: 60px 40px 120px;
+
+            h2 {
+                font-size: 1.8rem;
+                margin: 40px 0 20px;
+                color: $dark;
+                border-bottom: 2px solid $red;
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $text-gray;
+                margin-bottom: 20px;
+            }
+
+            ul:not(.contextual-links) {
+                margin-bottom: 30px;
+                padding-left: 20px;
+                list-style: none;
+
+                li {
+                    position: relative;
+                    margin-bottom: 15px;
+                    color: $text-gray;
+                    padding-left: 25px;
+
+                    &::before {
+                        content: "\f054";
+                        font-family: $font-icon-free;
+                        font-weight: 900;
+                        position: absolute;
+                        left: 0;
+                        top: 5px;
+                        color: $red;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

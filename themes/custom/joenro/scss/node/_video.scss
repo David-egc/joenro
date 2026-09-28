@@ -1,0 +1,25 @@
+.page-node-type-video {
+    .region-content {
+        padding: 90px 0 60px;
+        h1 {
+            display: none;
+        }
+
+        .node--type-video {
+            text-align: center;
+            h2 a{
+                @include title-view($dark);
+                @include title-view-after;
+            }
+            .field--name-field-video{
+               max-width: 70%;
+               margin-left: auto;
+               margin-right: auto;
+                .youtube-field-player{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}

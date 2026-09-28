@@ -1,0 +1,195 @@
+body{
+font-family: 'Montserrat', sans-serif;
+  color: $dark;
+  line-height: 1.6;
+
+#view-block-joenro-views-block-clientes-block-1,
+.view-servicios,
+#block-joenro-views-block-proyectos-block-1,
+#block-joenro-views-block-testimonios-block-1,
+#block-joenro-views-block-blog-block-1,
+#block-joenro-sobrenosotros{
+padding: 100px 0 ;
+
+}
+header.encabezado{
+  height: 82px;
+}
+ .region-content{
+  .block-page-title-block{
+    text-align:center;
+    
+  }
+  
+ }
+
+  a{
+    text-decoration: none;
+  }
+}
+h1,h2,h3{
+    font-family: 'Oswald SemiBold', sans-serif;
+  text-transform: uppercase;
+}
+img{ 
+  max-width: 100%;
+  height: auto;
+}
+
+// Baner nodos
+.page-node-type-articulo,.page-node-type-proyecto,.page-node-type-blog,.page-node-type-servicio{
+  .block-page-title-block{
+height: 35vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+    padding-top: 0px;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('../img/bg-node.jpeg');
+    background-position-x: 0%, 0%;
+    background-position-y: 0%, 0%;
+    background-size: auto, auto;
+  background-size: cover;
+  background-position: center;
+  color: $white;
+  padding-top: 80px;
+
+  }
+  #block-joenro-pestanas{
+    margin-top: 20px;
+  }
+  .region-contenido-secundario{
+     margin-top: 100px;
+  }
+}
+
+
+
+body{
+  &.user-logged-in.path-node .node{
+    padding-inline:10px ;
+  }
+  &:not(.user-logged-in).path-node .node{
+margin-top: 90px;
+padding-inline:10px ;
+}
+}
+// Enlaces de operaciones de nodos
+  .block-local-tasks-block {
+            text-align: center;
+
+            .tabs-wrapper {
+                display: inline-block;
+
+                ul.tabs--primary {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 20px;
+                    padding-bottom: 20px;
+
+                    li.tabs__tab.is-active a {
+                        background: $dark;
+                        color: $white !important;
+                        border: none;
+                        padding: 10px;
+                        font-family: 'Oswald';
+                        text-transform: uppercase;
+                        font-size: 0.8rem;
+                        cursor: pointer;
+                    }
+
+                    li.tabs__tab a {
+                        color: #002D9C !important;
+
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+        }
+
+
+.offcanvas {
+  background: $dark;
+  .offcanvas-header{
+    .btn-close{
+      color: $white;
+    }
+  }
+  .offcanvas-body{
+    .region-menu-responsive{
+      #block-joenro-marcadelsitio-3{
+        margin-bottom:20px;
+      }
+    #block-joenro-alternadordeidioma-2 {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+        ul.links {
+            display: inline-flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-inline: 20px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    right: 22px;
+                    bottom: -5px;
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 100%;
+                  
+                }
+
+                &[data-drupal-language="en"]::before {
+                    background-image: url('../img/LangEn.svg');
+                }
+
+                &[data-drupal-language="es"]::before {
+                    background-image: url('../img/LangEs.svg');
+                }
+                a{
+                    @include title-content;
+                    color: $white;
+                }
+
+                &.is-active {
+                    display: none;
+                }
+
+             
+            }
+
+
+
+        }
+    }
+
+    #block-joenro-navegacionprincipal-3{
+      @include main-menu;
+      ul:not(contextual-links){
+        flex-direction: column;
+      }
+    }
+    }
+    
+  }
+}
+
+
+// paginador
+
+.paginador{
+  @include paginador;
+}
+
+
+// menu administracion-drupal 
+.toolbar .toolbar-bar{
+  position: fixed;
+}
